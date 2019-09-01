@@ -19,7 +19,7 @@ Post 방식은 postman을 활용하여 테스트 하였습니다.
 #	  
 - 빌드 및 실행방법  
 	: kakaopay - kakaopayApplication을 실행  
-<test url>  
+- test url  
 1. "http://localhost:9000/rankYearSumAmt/'2018','2019'"
 
 
