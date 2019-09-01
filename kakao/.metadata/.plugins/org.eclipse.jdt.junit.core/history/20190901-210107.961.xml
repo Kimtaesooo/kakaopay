@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="KakaopayApplicationTests" project="kakaopay" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.kakaopay.KakaopayApplicationTests" time="0.581">
-    <testcase name="test01" classname="com.kakaopay.KakaopayApplicationTests" time="0.581"/>
-  </testsuite>
-</testrun>

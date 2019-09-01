@@ -1,5 +1,0 @@
-INDEX VERSION 1.131
-D:\kakao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2180313281.index
-\kakaopay\src\main\java
-D:\kakao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3091158510.index
-\blog-master_blog-master\src\main\java

@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+D:\kakao\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1992679535.index
-2384985592.index
-667914756.index
-2180313281.index
-3975866701.index
-984245435.index
-3878474001.index

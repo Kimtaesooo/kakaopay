@@ -1,5 +1,0 @@
-package com.kakaopay.dao;
-
-public interface DataOutputDao {
-
-}
