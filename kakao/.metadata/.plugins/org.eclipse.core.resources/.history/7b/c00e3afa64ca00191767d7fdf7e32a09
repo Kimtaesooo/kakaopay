@@ -1,0 +1,11 @@
+package com.kakaopay.dao;
+
+import com.kakaopay.model.AccountInfoModel;
+import com.kakaopay.model.MngtInfoModel;
+import com.kakaopay.model.TranHistoryModel;
+
+public interface DataOutputDao {
+	AccountInfoModel	getA();
+	MngtInfoModel		getB();
+	TranHistoryModel	getC();
+}

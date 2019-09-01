@@ -1,0 +1,19 @@
+package com.kakaopay;
+
+import java.sql.Connection;
+import javax.sql.DataSource;
+import org.junit.Test;
+
+public class dbTest {
+	//@Inject
+	private DataSource ds;
+	
+	@Test
+	public void testConnection() throws Exception{
+		try(Connection con = ds.getConnection()){
+			System.out.println("Connection : " + con + "\n");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

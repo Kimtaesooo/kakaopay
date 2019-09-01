@@ -1,0 +1,13 @@
+package com.kakaopay.model;
+
+public class TranHistoryModel {
+	private String	거래일자;
+	private String	계좌번호;
+	private int		거래번호;
+	private int		금액;
+	private int		수수료;
+	private String	취소여부;
+
+	
+	
+}

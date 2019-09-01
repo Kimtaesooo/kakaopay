@@ -1,0 +1,14 @@
+package com.kakaopay.dao;
+
+import java.util.List;
+
+import com.kakaopay.model.AcntDataInfoModel;
+
+public interface AnctDataInfoDao {
+	
+	// 메서드명은 마이바티스 매퍼 호출에서 사용 될 이름
+	//AcntDataInfoModel	selectRankYearSumAmt();		// 연도별 거래 합계 max 조회
+	
+	public List<AcntDataInfoModel> selectRankYearSumAmt() throws Exception;
+	
+}

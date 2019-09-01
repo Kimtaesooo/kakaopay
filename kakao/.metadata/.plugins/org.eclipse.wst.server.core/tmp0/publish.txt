@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sat Aug 31 23:35:35 KST 2019
+org.eclipse.jst.jee.server\:blog-master_blog-master=C\:\\Users\\taesoo\\sts-3.9.6.RELEASE\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\blog-master_blog-master
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\taesoo\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-jasper\\9.0.8\\tomcat-embed-jasper-9.0.8.jar=C\:\\Users\\taesoo\\sts-3.9.6.RELEASE\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\blog-master_blog-master\\WEB-INF\\lib\\tomcat-embed-jasper-9.0.8.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\taesoo\\.m2\\repository\\org\\springframework\\spring-web\\5.0.6.RELEASE\\spring-web-5.0.6.RELEASE.jar=C\:\\Users\\taesoo\\sts-3.9.6.RELEASE\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\blog-master_blog-master\\WEB-INF\\lib\\spring-web-5.0.6.RELEASE.jar

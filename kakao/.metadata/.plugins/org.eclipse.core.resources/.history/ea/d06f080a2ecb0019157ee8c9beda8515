@@ -1,0 +1,5 @@
+package com.kakaopay.service;
+
+public class DataOutputService {
+
+}

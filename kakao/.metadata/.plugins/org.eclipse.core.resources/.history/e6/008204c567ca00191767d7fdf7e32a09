@@ -1,0 +1,53 @@
+package com.kakaopay.model;
+
+import java.util.Date;
+
+public class TranHistoryModel {
+	private Date	거래일자;
+	private String	계좌번호;
+	private int		거래번호;
+	private int		금액;
+	private int		수수료;
+	private String	취소여부;
+	
+	
+	public Date get거래일자() {
+		return 거래일자;
+	}
+	public void set거래일자(Date 거래일자) {
+		this.거래일자 = 거래일자;
+	}
+	public String get계좌번호() {
+		return 계좌번호;
+	}
+	public void set계좌번호(String 계좌번호) {
+		this.계좌번호 = 계좌번호;
+	}
+	public int get거래번호() {
+		return 거래번호;
+	}
+	public void set거래번호(int 거래번호) {
+		this.거래번호 = 거래번호;
+	}
+	public int get금액() {
+		return 금액;
+	}
+	public void set금액(int 금액) {
+		this.금액 = 금액;
+	}
+	public int get수수료() {
+		return 수수료;
+	}
+	public void set수수료(int 수수료) {
+		this.수수료 = 수수료;
+	}
+	public String get취소여부() {
+		return 취소여부;
+	}
+	public void set취소여부(String 취소여부) {
+		this.취소여부 = 취소여부;
+	}
+
+	
+	
+}

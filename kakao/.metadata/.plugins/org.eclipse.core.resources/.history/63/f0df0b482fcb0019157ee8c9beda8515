@@ -1,0 +1,15 @@
+package com.kakaopay.service;
+
+import java.util.List;
+
+import com.kakaopay.model.AccountInfoVO;
+
+public class DataOutputServiceImpl implements DataOutputService {
+
+	@Override
+	public List<AccountInfoVO> selectRankYearSumAmt() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,77 @@
+package com.kakaopay.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.configurationprocessor.json.JSONArray;
+import org.springframework.boot.configurationprocessor.json.JSONObject;
+import org.springframework.stereotype.Service;
+
+import com.kakaopay.dao.AnctDataInfoDao;
+import com.kakaopay.model.NoDealCustomerModel;
+import com.kakaopay.model.RankYearBrAmtModel;
+import com.kakaopay.model.RankYearSumAmtModel;
+
+@Service
+public class AnctDataInfoServiceImpl implements AnctDataInfoService {
+	
+	@Autowired
+    private AnctDataInfoDao anctDataInfoDao;
+
+	@Override
+	public List<RankYearSumAmtModel> selectRankYearSumAmt(String year) throws Exception {
+		
+		// 연도별 max 합계 금액 조회
+		year = "";
+		year = "'2019', '2018'";
+		return anctDataInfoDao.selectRankYearSumAmt(year);
+	}
+
+	@Override
+	public List<NoDealCustomerModel> selectNoDealCustomer(String year) throws Exception {
+		
+		// 거래가 없는 고객 조회
+		year = "";
+		year = "'2019', '2018'";
+		return anctDataInfoDao.selectNoDealCustomer(year);
+	}
+
+	@Override
+	public String selectRankYearBrAmt(RankYearBrAmtModel rankYearBrAmtModel) throws Exception {
+		//String year = "";
+		
+//		for(int i=0; i < rankYearBrAmtModel.size(); i++) {
+//			year = year + "'" + rankYearBrAmtModel.get(i).get거래일자() + "'";
+//			
+//			if(rankYearBrAmtModel.size() != i+1) {
+//				year = year + ", ";
+//			}
+//		}
+//		
+		year = "";
+		year = "'2019', '2018'";
+		
+		List<RankYearBrAmtModel> resultRankYearBrAmtModel = anctDataInfoDao.selectRankYearBrAmt(year);
+		
+		// 연도별 관리점별 거래금액 합계 조회 후 큰 순서로 출력
+		JSONObject obj = new JSONObject();
+		JSONArray jArray = new JSONArray(); //배열이 필요할때
+		
+		for(int i=0; i < resultRankYearBrAmtModel.size(); i++) {
+			JSONObject sObject = new JSONObject(); //배열 내에 들어갈 json
+			sObject.put("brName", resultRankYearBrAmtModel.get(i).get관리점명());
+			sObject.put("brCode", resultRankYearBrAmtModel.get(i).get관리점코드());
+			sObject.put("sumAmt", resultRankYearBrAmtModel.get(i).get합계());
+			jArray.put(sObject);
+		}
+		
+		obj.put("year", "2019");
+		obj.put("dataList", jArray);
+		
+		String result = obj.toString();
+		
+		return result;
+	}
+
+} 

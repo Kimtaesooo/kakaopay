@@ -1,0 +1,23 @@
+package com.kakaopay.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Repository;
+
+import com.kakaopay.model.AccountInfoVO;
+
+@Repository
+public class DataOutputMapperImpl implements DataOutputMapper {
+	
+	@Inject
+	private SqlSession sqlSession;
+
+	private static final String Namespace = "com.kakaopay.mapper.srchTranHistoryMapper";
+
+	@Override
+    public List<AccountInfoVO> selectRankYearSumAmt() throws Exception {
+ 
+        return sqlSession.selectList(Namespace+".selectRankYearSumAmt");
+    }
+}

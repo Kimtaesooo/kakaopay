@@ -1,0 +1,9 @@
+package com.kakaopay.service;
+
+import java.util.List;
+
+import com.kakaopay.model.AcntDataInfoModel;
+
+public interface AnctDataInfoService {
+	List<AcntDataInfoModel> selectRankYearSumAmt() throws Exception;
+}

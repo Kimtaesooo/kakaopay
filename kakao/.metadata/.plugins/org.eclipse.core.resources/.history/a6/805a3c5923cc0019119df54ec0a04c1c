@@ -1,0 +1,10 @@
+package com.kakaopay.model;
+
+public class rankYearBrAmtModel {
+	private String	거래일자;	// 연도
+	private String	관리점명;	// 관리점명
+	private String	관리점코드;	// 관리점코드
+	private int		합계;		// 합계(금액 - 수수료)
+	
+	
+}

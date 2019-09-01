@@ -1,0 +1,6 @@
+package com.kakaopay.model;
+
+public class MngtInfoModel {
+	private String	관리점코드;
+	private String	관리점명;
+}

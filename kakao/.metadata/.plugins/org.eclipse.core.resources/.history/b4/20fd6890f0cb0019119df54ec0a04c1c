@@ -1,0 +1,23 @@
+package com.kakaopay.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Repository;
+
+import com.kakaopay.model.AcntDataInfoModel;
+
+@Repository
+public class AnctDataInfoDaoImpl implements AnctDataInfoDao {
+	
+	//@Inject
+	private SqlSession sqlSession;
+
+	private static final String Namespace = "com.kakaopay.mapper.srchAnctDataInfo";
+
+	@Override
+    public AcntDataInfoModel selectRankYearSumAmt() throws Exception {
+ 
+        return sqlSession.selectList(Namespace+".selectRankYearSumAmt");
+    }
+}

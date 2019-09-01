@@ -1,0 +1,28 @@
+1567087939660	Rename package 'com.kakaopay.dao'
+1567087954001	Rename type 'DataOutputDao'
+1567088250026	Rename type 'AccountInfoModel'
+1567088259319	Rename type 'MngtInfoModel'
+1567088264751	Rename type 'TranHistoryModel'
+1567089538336	Rename package 'com.kakaopay.Mapper'
+1567173420908	Delete element
+1567222168491	Rename package 'com.kakaopay.mapper'
+1567222176427	Rename type 'DataOutputMapper'
+1567222182427	Rename type 'DataOutputMapperImpl'
+1567222517258	Copy compilation unit
+1567222700442	Delete element
+1567232356407	Rename type 'DataOutputDao'
+1567232594988	Rename type 'DataOutputDaoImpl'
+1567233707984	Rename resource 'mappers'
+1567233772791	Rename resource 'srchTranHistoryMapper.xml'
+1567235354006	Rename type 'DataOutputService'
+1567235400291	Rename type 'DataOutputServiceImpl'
+1567235795459	Rename type 'KakaopayController'
+1567265103447	Delete element
+1567265280683	Delete element
+1567265310936	Delete element
+1567276027413	Rename type 'AcntDataInfoModel'
+1567276044579	Delete elements
+1567276191477	Copy compilation unit
+1567278694440	Copy compilation unit
+1567278871337	Rename type 'rankYearBrAmtModel'
+1567289951652	Delete element

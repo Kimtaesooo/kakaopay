@@ -1,0 +1,18 @@
+package com.kakaopay.service;
+
+import java.util.List;
+
+import com.kakaopay.model.NoDealCustomerModel;
+import com.kakaopay.model.RankYearBrAmtModel;
+import com.kakaopay.model.RankYearSumAmtModel;
+
+public interface AnctDataInfoService {
+	
+	List<RankYearSumAmtModel> selectRankYearSumAmt(String year) throws Exception;	// 연도별 max 합계 금액 조회
+	
+	List<NoDealCustomerModel> selectNoDealCustomer(String year) throws Exception;	// 거래가 없는 고객 조회
+	
+	String selectRankYearBrAmt(RankYearBrAmtModel rankYearBrAmtModel) throws Exception;	// 거래가 없는 고객 조회
+	
+	
+}

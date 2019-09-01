@@ -1,0 +1,24 @@
+package com.kakaopay.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.kakaopay.dao.AnctDataInfoDao;
+import com.kakaopay.model.RankYearSumAmtModel;
+
+@Service
+public class AnctDataInfoServiceImpl implements AnctDataInfoService {
+	
+	@Autowired
+    private AnctDataInfoDao anctDataInfoDao;
+
+	@Override
+	public List<RankYearSumAmtModel> selectRankYearSumAmt(String year) throws Exception {
+		year = "";
+		year = "'2019', '2018'";
+		return anctDataInfoDao.selectRankYearSumAmt(year);
+	}
+
+} 

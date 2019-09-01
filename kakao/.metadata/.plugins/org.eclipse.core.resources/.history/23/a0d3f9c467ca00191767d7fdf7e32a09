@@ -1,0 +1,14 @@
+package com.kakaopay.Mapper;
+
+import com.kakaopay.model.AccountInfoVO;
+import com.kakaopay.model.MngtInfoVO;
+import com.kakaopay.model.TranHistoryModel;
+
+public interface DataOutputMapper {
+	
+	// 메서드명은 마이바티스 매퍼 호출에서 사용 될 이름
+	AccountInfoVO	getAcntInfo();		// 계좌정보
+	MngtInfoVO		getMngtInfo();		// 관리점 정보
+	TranHistoryModel	getTranHistory();	// 거래내역
+	
+}

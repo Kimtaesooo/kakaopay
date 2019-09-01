@@ -1,0 +1,26 @@
+package com.kakaopay;
+
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.MethodSorters;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.kakaopay.service.AnctDataInfoServiceImpl;
+
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class KakaopayApplicationTests {
+	
+	private AnctDataInfoServiceImpl anctDataInfoServiceImpl;
+	
+    @Test
+    public void test() {
+        String good = restTemplate.getForObject("test", String.class);
+        assertThat(good).isEqualTo("Good");
+    }
+
+}

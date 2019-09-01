@@ -1,0 +1,5 @@
+package com.kakaopay.model;
+
+public class TranHistoryModel {
+
+}

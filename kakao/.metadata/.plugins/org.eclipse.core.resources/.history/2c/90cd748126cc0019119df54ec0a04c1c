@@ -1,0 +1,52 @@
+package com.kakaopay.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.kakaopay.dao.AnctDataInfoDao;
+import com.kakaopay.model.NoDealCustomerModel;
+import com.kakaopay.model.RankYearBrAmtModel;
+import com.kakaopay.model.RankYearSumAmtModel;
+
+@Service
+public class AnctDataInfoServiceImpl implements AnctDataInfoService {
+	
+	@Autowired
+    private AnctDataInfoDao anctDataInfoDao;
+
+	@Override
+	public List<RankYearSumAmtModel> selectRankYearSumAmt(String year) throws Exception {
+		// 연도별 max 합계 금액 조회
+		year = "";
+		year = "'2019', '2018'";
+		return anctDataInfoDao.selectRankYearSumAmt(year);
+	}
+
+	@Override
+	public List<NoDealCustomerModel> selectNoDealCustomer(String year) throws Exception {
+		// 거래가 없는 고객 조회
+		year = "";
+		year = "'2019', '2018'";
+		return anctDataInfoDao.selectNoDealCustomer(year);
+	}
+
+	@Override
+	public List<RankYearBrAmtModel> selectRankYearBrAmt(RankYearBrAmtModel rankYearBrAmtModel) throws Exception {
+		String year = "";
+		year = "'2019', '2018'";
+		
+		List<RankYearBrAmtModel> a = anctDataInfoDao.selectRankYearBrAmt(year);
+		
+		year = "2019";
+		ArrayList<RankYearBrAmtModel> listRankYearBrAmt = new ArrayList();
+		
+		
+		
+		
+		return a;
+	}
+
+} 

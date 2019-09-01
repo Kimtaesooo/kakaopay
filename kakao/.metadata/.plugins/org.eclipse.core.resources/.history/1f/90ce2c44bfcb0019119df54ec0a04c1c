@@ -1,0 +1,25 @@
+package com.kakaopay.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class KakaopayController {
+	
+	@RequestMapping(value="/helloworld", method = RequestMethod.GET)
+	public String HelloWorld() {
+		return "접근 테스트";
+	}
+	
+	/*
+	 * 연도별 합계 금액이 가장 많은 고객을 추출
+	 * @param contractDetailVO
+	 */
+	
+	@RequestMapping(value="/rankYearSumAmt", method = RequestMethod.GET)
+	public String srchRankYearSumAmt() {
+		return "접근 테스트";
+	}
+
+}
