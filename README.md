@@ -20,10 +20,15 @@ Post 방식은 postman을 활용하여 테스트 하였습니다.
 - 빌드 및 실행방법  
 	: kakaopay - kakaopayApplication을 실행  
 <test url>  
-1. http://localhost:9000/rankYearSumAmt/'2018','2019'  
-2. http://localhost:9000/noDealCustomer/'2018','2019'  
-3. http://localhost:9000/rankYearBrAmt/2019, 2018  
-4. http://localhost:9000/brSumAmt/  
+1. http://localhost:9000/rankYearSumAmt/'2018','2019'
+#
+2. http://localhost:9000/noDealCustomer/'2018','2019'
+#
+3. http://localhost:9000/rankYearBrAmt/2019, 2018
+#
+4. http://localhost:9000/brSumAmt/
+
+
 	: 4번의 경우 postman으로 TEST  
 #
 1,2,3,4 모두 Json 데이터를 Map으로 받아 로직 처리 후 다시 map으로 리턴하여 json으로 출력하려 하였으나  
